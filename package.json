@@ -1,0 +1,40 @@
+{
+	"name": "vscode-vsts-status",
+	"displayName": "Visual Studio Team Services status.",
+	"description": "Checks the status of Visual Studio Team Services and displays it in the status bar.",
+	"version": "0.0.1",
+	"publisher": "lszomoru",
+	"engines": {
+		"vscode": "^0.10.1"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": ["*"],
+	"main": "./out/src/extension",
+	"contributes": {
+		"commands": [{
+			"command": "extension.openVSTSStatus",
+			"title": "Open Visual Studio Team Services status page."
+		}],
+		"configuration": {
+			"title": "Visual Studio Team Services settings",
+			"type": "object",
+			"properties": {
+				"serviceStatusUri": {
+					"type": "string",
+          			"default": "https://www.visualstudio.com/support/support-overview-vs",
+          			"description": "Visual Studio Team Services status page Uri"
+				}
+			}
+		}
+	},
+	"scripts": {
+		"vscode:prepublish": "node ./node_modules/vscode/bin/compile",
+		"compile": "node ./node_modules/vscode/bin/compile -watch -p ./"
+	},
+	"devDependencies": {
+		"typescript": "^1.6.2",
+		"vscode": "0.10.x"
+	}
+}
