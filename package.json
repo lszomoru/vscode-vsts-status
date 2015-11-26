@@ -18,8 +18,8 @@
 			"title": "Open Visual Studio Team Services status page."
 		}],
 		"configuration": {
-			"title": "Visual Studio Team Services settings",
 			"type": "object",
+			"title": "Visual Studio Team Services settings",
 			"properties": {
 				"serviceStatusUri": {
 					"type": "string",

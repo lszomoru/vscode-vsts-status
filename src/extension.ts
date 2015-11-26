@@ -20,13 +20,16 @@ export class StatusService {
 	private _statusIcons:Array<string> = ["octicon-check", "octicon-alert", "octicon-alert"];
 	private _defaultIcon:string = "octicon-question";
 	private _defaultTooltip:string = "Visual Studio Team Services status.";
-
-	// TODO: Get this value from a setting file
 	private _statusPageUri:string = "https://www.visualstudio.com/support/support-overview-vs";
 
 	constructor() {
 		this._statusBarItem = vscode.window.createStatusBarItem(vscode.StatusBarAlignment.Left);
 		this.updateStatusBarItem(this._defaultIcon, this._defaultTooltip);
+
+		// Override the service status page from the configuration file
+		if (vscode.workspace.getConfiguration().get<string>("serviceStatusUri", "") != "") {
+			this._statusPageUri = vscode.workspace.getConfiguration().get<string>("serviceStatusUri", "");
+		}
 
 		// Get the service status at the moment
 		this.getServiceStatus();
