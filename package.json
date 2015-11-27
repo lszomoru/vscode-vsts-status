@@ -7,21 +7,19 @@
 	"version": "0.0.1",
 	"publisher": "lszomoru",
 	"license": "MIT",
-    "bugs": {
-        "url": "https://github.com/lszomoru/vscode-vsts-status/issues",
-        "email": "lszomoru@microsoft.com"
-    },
-    "homepage": "https://github.com/lszomoru/vscode-vsts-status/blob/master/README.md",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/lszomoru/vscode-vsts-status.git"
-    },
+	"bugs": {
+		"url": "https://github.com/lszomoru/vscode-vsts-status/issues",
+	        "email": "lszomoru@microsoft.com"
+	},
+	"homepage": "https://github.com/lszomoru/vscode-vsts-status/blob/master/README.md",
+	"repository": {
+		"type": "git",
+	        "url": "https://github.com/lszomoru/vscode-vsts-status.git"
+	},
 	"engines": {
 		"vscode": "^0.10.1"
 	},
-	"categories": [
-		"Other"
-	],
+	"categories": ["Other"],
 	"activationEvents": ["*"],
 	"main": "./out/src/extension",
 	"contributes": {
