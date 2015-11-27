@@ -1,9 +1,21 @@
 {
 	"name": "vscode-vsts-status",
-	"displayName": "Visual Studio Team Services status.",
-	"description": "Checks the status of Visual Studio Team Services and displays it in the status bar.",
+	"displayName": "Visual Studio Team Services health indicator",
+	"description": "Checks the health of Visual Studio Team Services and displays an indicator in the status bar.",
+	"keywords": ["VSO", "Visual Studio Online", "VSTS", "Visual Studio Team Services", "Status", "Health"],
+	"icon": "assets/VSTeam.png",
 	"version": "0.0.1",
 	"publisher": "lszomoru",
+	"license": "MIT",
+    "bugs": {
+        "url": "https://github.com/lszomoru/vscode-vsts-status/issues",
+        "email": "lszomoru@microsoft.com"
+    },
+    "homepage": "https://github.com/lszomoru/vscode-vsts-status/blob/master/README.md",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/lszomoru/vscode-vsts-status.git"
+    },
 	"engines": {
 		"vscode": "^0.10.1"
 	},
