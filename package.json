@@ -4,6 +4,10 @@
 	"description": "Checks the health of Visual Studio Team Services and displays an indicator in the status bar.",
 	"keywords": ["VSO", "Visual Studio Online", "VSTS", "Visual Studio Team Services", "Status", "Health"],
 	"icon": "assets/VSTeam.png",
+	"galleryBanner": {
+		"color": "#EEEEEE",
+		"theme": "dark"
+	},
 	"version": "0.0.1",
 	"publisher": "lszomoru",
 	"license": "MIT",
