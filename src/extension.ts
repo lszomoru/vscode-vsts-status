@@ -47,7 +47,7 @@ export class StatusService {
 				var tooltip = _self._defaultTooltip;
 
 				// Extract the service status message from the HTML page
-				var statusMessageResult = _self.execRegEx(response.entity, "<h1 xmlns=\"\">Visual Studio Team Services status(\\w|\\W)*?</p>", "m");
+				var statusMessageResult = _self.execRegEx(response.entity, "<h1 xmlns=\"\">Visual Studio Team Services (\\w|\\W)*?</p>", "m");
 				if (statusMessageResult != null && statusMessageResult.length > 0) {
 					tooltip = statusMessageResult[0].substring(statusMessageResult[0].indexOf("<p") + 12, statusMessageResult[0].indexOf("</p"));
 				}
