@@ -5,4 +5,4 @@ Visual Studio Team Services health indicator right in the Visual Studio Code sta
 ![VSCode](assets/vscode.png)
 
 ## License
-MIT. For more details check [LICENSE] (LICENSE).
+MIT. For more details check [LICENSE](LICENSE).
