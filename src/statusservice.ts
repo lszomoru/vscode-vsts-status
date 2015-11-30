@@ -9,7 +9,7 @@ export class StatusService {
 	private _statusPageUri:string = "https://www.visualstudio.com/support/support-overview-vs";
 
 	constructor() {
-		this._statusBarItem = vscode.window.createStatusBarItem(vscode.StatusBarAlignment.Left);
+		this._statusBarItem = vscode.window.createStatusBarItem(vscode.StatusBarAlignment.Left, 100);
 		this.updateStatusBarItem(this._defaultIcon, this._defaultTooltip);
 
 		// Override the service status page from the configuration file
